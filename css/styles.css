@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+img {
+  max-width: 100%;
+}
+
+/* Override UGG site */
+#main {
+  width: 100%;
+  padding: 0;
+}
+.content-asset p {
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: none;
+}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.margin-bot-10 {
+  padding-bottom: 10px;
+}
+
+/* Typography */
+/**************************/
+#parallax h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(237, 28, 46, 255);
+  padding: 0;
+  margin: 0;
+}
+#parallax .parallax-one h2 {
+  text-transform: uppercase;
+  color: rgba(237, 28, 46, 255);
+}
+#parallax h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 0.9;
+}
+#parallax h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: black;
+}
+#parallax p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.sc {
+  color: #3b8595;
+}
+.ny {
+  color: #3d3c3a;
+}
+.atw {
+  color: #c48660;
+}
+
+/* Section - Title */
+/**************************/
+#parallax .title {
+  background: white;
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+#parallax .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax .block {
+  background: white;
+  padding: 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#parallax .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+#parallax .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax .parallax-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://guitar.com/wp-content/uploads/2019/06/Fender-American-Original-50s-strat-styles-shot@1400x1050.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://images.ctfassets.net/r1mvpfown1y6/1Mmdvjx166ceEdE9UrpOL2/834a85f1970ac80c3df62bfd4387bd26/Web_Elec_0224_20_American_Ultra_Phase_II_-_Telecaster_Hero.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% center;
+}
+#parallax .parallax-three {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://static.guitarcenter.com/static/gc/page-brand/fender/mobile/gc-md-hf-fender-header-large-4-26-21.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax figcaption {
+  text-align: center;
+}
+/* Extras */
+/**************************/
+#parallax .line-break {
+  border-bottom: 1px solid black;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #parallax .block {
+    padding: 30px;
+    width: 420px;
+  }
+  #parallax h2 {
+    font-size: 30px;
+  }
+  #parallax .block {
+    padding: 30px;
+  }
+  #parallax .parallax-one,
+  #parallax .parallax-two,
+  #parallax .parallax-three {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
+  #parallax .title {
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
